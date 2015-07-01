@@ -1,4 +1,4 @@
 ---
 - name: reload ssh
-  action: service name=ssh state=reloaded
+  action: command /etc/init.d/ssh reload
   ignore_errors: yes
